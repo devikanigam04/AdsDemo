@@ -18,9 +18,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
-        ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
 
-    </com.google.android.gms.ads.AdView>
+    <!-- PHONE AD SCREEN SIZE -->
+    <!--ads:adSize="BANNER"            : Size(W x H)= 320x50 -->
+    <!--ads:adSize="LARGE_BANNER"      : Size(W x H)= 320x100 -->
+    <!--ads:adSize="MEDIUM_RECTANGLE"  : Size(W x H)= 300x250 -->
+    <!--ads:adSize="SMART_BANNER"      : Size(W x H)= Screen width x 32|50|90 -->
+    <!--ads:adSize="BANNER"-->
 
 </LinearLayout>
