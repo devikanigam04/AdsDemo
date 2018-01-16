@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
-    tools:context="com.app.adsdemo.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.app.adsdemo.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,10 +16,10 @@
         android:id="@+id/ad_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
         ads:adSize="SMART_BANNER"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
 
     <!-- PHONE AD SCREEN SIZE -->
     <!--ads:adSize="BANNER"            : Size(W x H)= 320x50 -->
@@ -28,4 +28,14 @@
     <!--ads:adSize="SMART_BANNER"      : Size(W x H)= Screen width x 32|50|90 -->
     <!--ads:adSize="BANNER"-->
 
+    <Button
+        android:id="@+id/btn_show_interstitial_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/black"
+        android:padding="5dp"
+        android:text="SHOW AD"
+        android:textColor="@android:color/white" />
 </LinearLayout>
